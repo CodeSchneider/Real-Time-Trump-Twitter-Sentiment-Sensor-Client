@@ -20,9 +20,8 @@ Make sure you have node and npm installed first, `node -v` and `npm -v`.
 * `npm install`.
 * `npm start`.
 
-## Preview
-
-## Configure
+## Architecture
+![](https://s3.amazonaws.com/real-time-trump-twitter-sentiment-sensor/RTTTSS+Architectural+Diagram.png)
 
 ## Sending Feedback
 
