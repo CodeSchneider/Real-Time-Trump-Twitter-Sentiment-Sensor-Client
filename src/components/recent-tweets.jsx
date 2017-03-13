@@ -22,7 +22,7 @@ class RecentTweets extends Component {
   componentDidMount() {
     this.serverRequest =
       $
-        .get("http://localhost:1337/twitter/recent")
+        .get("https://rtttss-api.herokuapp.com/twitter/recent")
         .then(function(recentTweets) {
           this.setState({
             recentTweets: recentTweets

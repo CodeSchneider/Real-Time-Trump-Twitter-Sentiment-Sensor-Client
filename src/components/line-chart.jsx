@@ -19,7 +19,7 @@ class LineChart extends Component {
   componentDidMount() {
     //GET INITIAL DATE
     this.serverRequest =
-      $.get("http://localhost:1337/twitter/history")
+      $.get("https://rtttss-api.herokuapp.com/twitter/history")
       .then(function(data1) {
         let data = this.state.data;
         for (var i=0; i<data1.length; i++) {
