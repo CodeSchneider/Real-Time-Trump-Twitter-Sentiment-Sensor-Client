@@ -115,6 +115,10 @@ h3{
   -webkit-font-smoothing: antialiased;
 }
 
+.section-header span {
+  color: #424242;
+}
+
 .axis{
     fill:#bbc7d9;
     opacity: 1;
