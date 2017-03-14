@@ -17,13 +17,13 @@ class LineChart extends Component {
   }
 
   componentDidMount() {
-    //GET INITIAL DATE
+    //GET INITIAL DATA
     this.serverRequest =
       $.get("https://rtttss-api.herokuapp.com/twitter/history")
-      .then(function(data1) {
+      .then(function(resp) {
         let data = this.state.data;
-        for (var i=0; i<data1.length; i++) {
-          data.push(data1[i]);
+        for (var i=0; i<resp.length; i++) {
+          data.push(resp[i]);
         }
         this.setState({
           data: data
